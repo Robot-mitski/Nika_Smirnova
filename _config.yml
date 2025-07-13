@@ -11,7 +11,7 @@ repository               : "academicpages/academicpages.github.io"
 
 author:
   # Biographic information
-  avatar           : "images/profile.png"
+  avatar           : "profile.png"
   name             : "Смирнова Ника"
   bio              : "Будущий академик"
   location         : "Санкт-Петербург"
