@@ -2,13 +2,13 @@ main:
   - title: "Публикации"
     url: "https://robot-mitski.github.io/Nika_Smirnova/publications/"   
     
-  - title: "Портфолио"
+  - title: "Заметки"
     url: "https://robot-mitski.github.io/Nika_Smirnova/portfolio/"
         
   - title: "Блог"
     url: "https://robot-mitski.github.io/Nika_Smirnova/year-archive/"
     
-  - title: "Резюме"
+  - title: "Мое резюме"
     url: "https://robot-mitski.github.io/Nika_Smirnova/cv/"
     
   - title: "Гид"
