@@ -1,27 +1,25 @@
-locale                   : "ru"
-site_theme               : "default"
-title                    : "Кофейные истории"
-title_separator          : "-"
-name                     : &name "Смирнова Ника"
-description              : &description "академические достижения"
-  url                      : 
-  baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
+locale: "ru"
+site_theme: "default"
+title: "Кофейные истории"
+title_separator: "-"
+name: &name "Смирнова Ника"
+description: &description "академические достижения"
+url: "" 
+baseurl: "" # the subpath of your site, e.g. "/blog"
+repository: "academicpages/academicpages.github.io"
 
 author:
   # Biographic information
-  avatar           : "profile.png"
-  name             : "Смирнова Ника"
-  bio              : "Будущий академик"
-  location         : "Санкт-Петербург"
-  employer         : "AIRI, CберТех"
-  email            : "nika646470@gmail.com" 
-
-  github           : "https://github.com/Robot-mitski"
-  kaggle           : "https://www.kaggle.com/nikasmirnova"
-
+  avatar: "profile.png"
+  name: "Смирнова Ника"
+  bio: "Будущий академик"
+  location: "Санкт-Петербург"
+  employer: "AIRI, CберТех"
+  email: "nika646470@gmail.com"
+  github: "https://github.com/Robot-mitski"
+  kaggle: "https://www.kaggle.com/nikasmirnova"
   # Social media
-  telegram         : "https://t.me/space_capuchino"
+  telegram: "https://t.me/space_capuchino"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
