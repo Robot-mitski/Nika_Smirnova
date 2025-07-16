@@ -29,63 +29,64 @@ publication_category:
     title: 'Статьи'    
   conferences:
     title: 'Доклады'
-
 # Site Settings
-teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-breadcrumbs              : false # true, false (default)
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
+teaser: # filename of teaser fallback teaser image placed in /images/, e.g. "500x300.png"
+breadcrumbs: false # true, false (default)
+words_per_minute: 160
+future: true
+read_more: "disabled" # if enabled, adds "Read more" links to excerpts
+talkmap_link: false # change to true to add link to talkmap on talks page
+
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
+  provider: # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            :
+    shortname:
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963
   facebook:
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+    appid:
+    num_posts: # 5 (default)
+    colorscheme: # "light" (default), "dark"
+  
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  allowedFields: ['name', 'email', 'url', 'message']
+  branch: "gh-pages" # "master", "gh-pages"
+  commitMessage: "New comment."
+  filename: "comment-{@timestamp}"
+  format: "yml"
+  moderation: true
+  path: "_data/comments/{options.slug}"
+  requiredFields: ['name', 'email', 'message']
   transforms:
-    email                : "md5"
+    email: "md5"
   generatedFields:
     date:
-      type               : "date"
+      type: "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
-  path                   : # blank (default) uses feed.xml
+        format: "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 
+atom_feed:
+  hide: false # change to true to hide the RSS feed in the footer
+  path: # blank (default) uses feed.xml
 
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-alexa_site_verification  :
-yandex_site_verification :
+google_site_verification:
+bing_site_verification:
+alexa_site_verification:
+yandex_site_verification:
 
 # Analytics
 analytics:
-  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider: "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
-    tracking_id          :
-
+    tracking_id:
 
 # Reading Files
 include:
   - .htaccess
   - _pages
   - files
+
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -113,12 +114,13 @@ exclude:
   - README
   - tmp
   - vendor
+
 keep_files:
   - .git
   - .svn
+
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
 
 # Conversion
 markdown: kramdown
@@ -126,7 +128,6 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -139,8 +140,7 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
-# These settings control the types of collections used by the template
+# Collections
 collections:
   teaching:
     output: true
@@ -155,8 +155,7 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-
-# These settings control how pages and collections are included in the site
+# Defaults
 defaults:
   # _posts
   - scope:
@@ -169,6 +168,7 @@ defaults:
       comments: true
       share: true
       related: true
+  
   # _pages
   - scope:
       path: ""
@@ -176,6 +176,7 @@ defaults:
     values:
       layout: single
       author_profile: true
+  
   # _teaching
   - scope:
       path: ""
@@ -185,6 +186,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  
   # _publications
   - scope:
       path: ""
@@ -194,6 +196,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  
   # _portfolio
   - scope:
       path: ""
@@ -203,6 +206,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
+  
   # _talks
   - scope:
       path: ""
@@ -212,19 +216,14 @@ defaults:
       author_profile: true
       share: true
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
+  style: compressed
 
 # Outputting
 permalink: /:categories/:title/
-# paginate: 5 # amount of posts to show
-# paginate_path: /page:num/
-timezone: Etc/UTC # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
+timezone: Etc/UTC
 
 # Plugins
 plugins:
@@ -235,7 +234,6 @@ plugins:
   - jekyll-redirect-from
   - jemoji
 
-# Mimic GitHub Pages with --safe
 whitelist:
   - jekyll-feed
   - jekyll-gist
@@ -250,22 +248,3 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - http://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
